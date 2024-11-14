@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Email Subject</title>
+    <style>
+        /* Define your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            border-top: 10px solid #007862;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        .logo {
+            text-align: center;
+        }
+        .logo img {
+            max-width: 300px; /* Adjust the max-width to your desired logo size */
+            height: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            
+            padding: 10px;
+            text-align: left;
+        }
+       
+        .odd { 
+            background-color: #fff;
+        } 
+
+        h1 {
+            color: #007862;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://ringbuilderdev.gemfind.us/assets/images/hydepark_new_logo.png" alt="Your Company Logo">
+        </div>
+        <h1>{{title}}</h1>
+        <table>
+            
+            <tr class="odd">
+                <th> Full Name </th>
+                <td> {{name}}</td>
+            </tr>
+           
+            <tr class="even">
+                <th>Email</th>
+                <td>{{email}}</td>
+            </tr>
+           
+            <tr class="odd">
+                <th>Phone</th>
+                <td>{{phone}}</td>
+            </tr>
+
+             <tr class="even">
+                <th>Country of residence</th>
+                <td>{{country}}</td>
+            </tr>
+
+             <tr class="odd">
+                <th>Point of sale city</th>
+                <td>{{city}}</td>
+            </tr>
+
+             <tr class="even">
+                <th>Address</th>
+                <td>{{address}}</td>
+            </tr>
+       
+             <tr class="odd">
+                <th>Your Message</th>
+                <td>{{message}}</td>
+            </tr>
+           
+        </table>
+    </div>
+</body>
+</html>
